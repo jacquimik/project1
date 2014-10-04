@@ -17,20 +17,17 @@ ActiveRecord::Schema.define(version: 20141003074540) do
   enable_extension "plpgsql"
 
   create_table "categories", force: true do |t|
-    t.string  "name"
-    t.integer "item_id"
+    t.string "name"
   end
 
-  create_table "categories_items", force: true do |t|
+  create_table "categories_items", id: false, force: true do |t|
     t.integer "category_id"
     t.integer "item_id"
   end
 
   create_table "items", force: true do |t|
-    t.string  "name"
-    t.text    "image_url"
-    t.integer "category_id"
-    t.integer "user_id"
+    t.string "name"
+    t.text   "image_url"
   end
 
   create_table "users", force: true do |t|
