@@ -4,14 +4,14 @@ Rails.application.routes.draw do
   resources :users
   resources :items
 
-
+get '/about' => 'pages#about'
 
 
   # get '/users/edit' => 'users#edit', :as => :edit_user
   # resources :users, :except => [:edit]
 
-  get '/login' => 'session#new'
-  post '/login' => 'session#create'
-  delete '/login' => 'session#destroy'
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  delete '/login' => 'sessions#destroy'
 
 end
