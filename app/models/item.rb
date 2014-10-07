@@ -5,8 +5,8 @@
 #  id          :integer          not null, primary key
 #  name        :string(255)
 #  image_url   :text
-#  category_id :integer
 #  user_id     :integer
+#  description :string(255)
 #
 
 class Item < ActiveRecord::Base

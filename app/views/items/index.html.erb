@@ -1,1 +1,7 @@
-<h2>Please add an Item</h2>
+<h2>All clothes in the DB</h2>
+<ul></ul>
+<% @items.each do |item| %>
+  <li>
+    <%= link_to item.name, item %>
+  </li>
+<% end %>

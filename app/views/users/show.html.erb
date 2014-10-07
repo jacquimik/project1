@@ -5,3 +5,9 @@
   User since:
   <%= @user.created_at.strftime '%B %m %Y' %>
 </p>
+
+<ul>
+	<% @user.items.each do |item| %>
+		<li><%= link_to(item.name, item) %></li>
+	<% end %>
+</ul>

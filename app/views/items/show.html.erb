@@ -1,1 +1,6 @@
-<h2>Hello, Add an Item</h2>
+<h2><%= @item.name %></h2>
+<%= @item.image_url %>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %>
+<%= link_to 'Delete', @item, :method => :delete, :data => { :confirm => 'Are you sure?' } %>

@@ -1,9 +1,2 @@
-<form action="item" method="post">
-	<label>Name:</label>
-	<input type="text" name="item" value="<%= @item %>" autofocus>
-	<label>Image:</label>
-	<input type="text" name="item" value="<%= @item %>">
-
-
-	<button>Upload Item!</button>
-</form>
+<h3>New Item</h3>
+<%= render :partial => 'form' %>

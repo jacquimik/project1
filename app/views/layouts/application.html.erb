@@ -6,14 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+<header>
+  Restyle Me
+</header>
 
 <nav>
   <div class="container">
-    <ul>
-      <%== intellinav %>
-       <li><%= link_to('Home', root_path) %></li>
-    </ul>
+    <%== intellinav %>
+    <%= link_to('Home', root_path) %>
   </div>
 </nav>
 

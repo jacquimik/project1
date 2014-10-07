@@ -2,9 +2,8 @@
 #
 # Table name: categories
 #
-#  id      :integer          not null, primary key
-#  name    :string(255)
-#  item_id :integer
+#  id   :integer          not null, primary key
+#  name :string(255)
 #
 
 class Category < ActiveRecord::Base

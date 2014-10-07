@@ -6,11 +6,12 @@ class ItemsController < ApplicationController
 	end
 
 	def new 
+		@item = Item.new
 	end
 
 	def create
-		Item.create item_params
-		redirect_to(items_path)
+		item = Item.create item_params
+		redirect_to(item)
 	end
 
 	def show
@@ -23,9 +24,9 @@ class ItemsController < ApplicationController
 		redirect_to(items_path)
 	end
 
-	def edit
-		@item = Item.find params[:id]
-	end
+  def edit
+    @item = Item.find params[:id]
+  end
 
 	def update
 		item = Item.find params[:id]
@@ -36,6 +37,6 @@ class ItemsController < ApplicationController
 	private
 	def item_params
 		#params whitelisting
-		params.require(:item).permit(:name, :image)
+		params.require(:item).permit(:name, :image_url, :category_ids => [])
 	end
 end
