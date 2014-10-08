@@ -11,5 +11,6 @@
 
 class Item < ActiveRecord::Base
 	belongs_to :user
+	# has_many :categories, through: :categories_items
 	has_and_belongs_to_many :categories
 end

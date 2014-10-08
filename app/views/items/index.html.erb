@@ -1,7 +1,10 @@
-<h2>All clothes in the DB</h2>
+<h2>All clothes</h2>
 <ul></ul>
 <% @items.each do |item| %>
   <li>
     <%= link_to item.name, item %>
+    <br>
+    <img src="<%= item.image_url %>">
   </li>
 <% end %>
+

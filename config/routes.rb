@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   root :to => 'pages#home'
 
-  resources :users
   resources :items
+  resources :users
+  resources :categories
 
 get '/about' => 'pages#about'
 

@@ -14,8 +14,13 @@
     <%= f.text_field :description %>
   </p>
 
-  <label></label>
-  <%= f.submit %>
+  <%= hidden_field_tag "item[category_ids][]", nil %>
 
+  <% Category.all.each do |category| %>
+    <%= check_box_tag "item[category_ids][]", category.id, @item.category_ids.include?(category.id), id: dom_id(category) %>
+    <%= label_tag dom_id(category), category.name %><br>
+  <% end %>
+
+  <%= f.submit %>
 
 <% end %>

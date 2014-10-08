@@ -35,8 +35,8 @@ class ItemsController < ApplicationController
 	end
 
 	private
+
 	def item_params
-		#params whitelisting
-		params.require(:item).permit(:name, :image_url, :category_ids => [])
+		params.require(:item).permit(:name, :image_url, :description, category_ids: [])
 	end
 end

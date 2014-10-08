@@ -1,0 +1,8 @@
+<h2>Search Product by Category</h2>
+	<% @categories.each do |category| %>
+		<ul> 
+  		<li>
+    		<%= link_to category.name, category %>
+  		</li>
+		</ul>
+	<% end %>
