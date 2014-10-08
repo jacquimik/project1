@@ -5,9 +5,15 @@ Rails.application.routes.draw do
   resources :users
   resources :categories
 
-get '/about' => 'pages#about'
-get '/search' => 'pages#search'
-# get '/myuploads' => 'items#user'
+  resources :searches, only: [:new, :create]
+
+  # search/new
+  # search/create
+  # search/[id]
+
+  get '/about' => 'pages#about'
+  # get '/search' => 'pages#search'
+  # get '/myuploads' => 'items#user'
 
 
   # get '/users/edit' => 'users#edit', :as => :edit_user
@@ -16,5 +22,7 @@ get '/search' => 'pages#search'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   delete '/login' => 'sessions#destroy'
+
+  # resources :sessions, only: [:new, :create, :destroy]
 
 end

@@ -1,4 +1,4 @@
-<%= form_for @items.name do |f| %>
+<%= form_for @item do |f| %>
   <p>
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -14,28 +14,12 @@
     <%= f.text_field :description %>
   </p>
 
+  <% Category.all.each do |category| %>
+    <%= check_box_tag "item[category_ids][]", category.id, @item.category_ids.include?(category.id), id: dom_id(category) %>
+    <%= label_tag dom_id(category), category.name %><br>
   <% end %>
 
-
-
 <div>
-
-<%= form_for @item.name do |f| %>
-<%= f.label :gender, 'Please select your gender' %>
-<%= f.select :gender, options_for_select([['Female','1'],['Male','2']]) %>
-<% end %>
-
-<%= form_for @item.name do |f| %>
-<%= f.label :condition, 'Please select the condition of the item' %>
-<%= f.select :condition, options_for_select([['Brand new with tags still attached','3'], ['Worn once or twice','4'], ['Used','5']]) %>
-<br>
-
-
-<%= form_for @item.name do |f| %>
-<%= f.label :size, 'Please select your size' %>
-<%= f.select :size, options_for_select([['XXS','6'], ['XS','7'], ['S','8'], ['M','9'], ['L','10'], ['XL','11'], ['XXL','12'], ['----'], ['6','13'], ['8','14'], ['10','15'], ['12','16'], ['14','17'], ['16','18'], ['18','19'], ['20','20']]) %>
-<% end %>
-
 
 <%= f.submit %>
 

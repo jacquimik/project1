@@ -1,13 +1,13 @@
 body {
 	text-align: center;
-	background-color: #F5E0FF;
+	background-color: white;
 	font-family: Arial;
 }
 
 header {
 	font-size: 34px;
 	text-align: center;
-	background-color: #766180;
+	background-color: black;
 	height: 50px;
 	color: white;
 }
