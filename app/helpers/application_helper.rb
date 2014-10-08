@@ -9,6 +9,7 @@ module ApplicationHelper
       nav += "#{ link_to('Add Item', new_item_path) }  "
       nav += "#{ link_to('About', about_path) }  "
       nav += "#{ link_to('View all Items', items_path) }  "
+      nav += "#{ link_to('View all Items', items_path) }  "
 
 
     else 
