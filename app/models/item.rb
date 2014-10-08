@@ -6,7 +6,10 @@
 #  name        :string(255)
 #  image_url   :text
 #  user_id     :integer
-#  description :string(255)
+#  description :text
+#  gender      :string(255)
+#  condition   :string(255)
+#  size        :string(255)
 #
 
 class Item < ActiveRecord::Base

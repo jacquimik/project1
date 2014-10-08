@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-	skip_before_filter :verify_authenticity_token
+	# skip_before_filter :verify_authenticity_token
 
 	def index
 		@items = Item.all
@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 
 	def create
 		item = Item.create item_params
-		redirect_to(item)
+		redirect_to item
 	end
 
 	def show

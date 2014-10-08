@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :categories
 
 get '/about' => 'pages#about'
+get '/search' => 'pages#search'
+# get '/myuploads' => 'items#user'
 
 
   # get '/users/edit' => 'users#edit', :as => :edit_user
