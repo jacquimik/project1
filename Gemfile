@@ -28,6 +28,10 @@ gem 'spring',        group: :development
 
 gem 'bcrypt'
 
+group :production, :staging do
+  gem 'rails_12factor'
+end
+
 group :development do
   gem 'pry-rails'
   gem 'pry-byebug'
@@ -40,6 +44,8 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
 end
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
