@@ -1,4 +1,6 @@
 <h1>Restyle Me</h1>
 
-<a href="/searches/new">Search</a>
-<a href="/items/new">Create new</a>
+<% if @current_user.present? %>
+	<a href="/searches/new">Search</a>
+	<a href="/items/new">Create new</a>
+<% end %>
