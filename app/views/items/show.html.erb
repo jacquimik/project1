@@ -1,7 +1,10 @@
-<h2><%= @item.name %></h2>
+
+	<p><h2><%= @item.name %></h2></p>
+	<p>
 <img src="<%= @item.image_url %>">
+</p>
 <p><%= @item.description %><p/>
-<br>
+
 
 <%= link_to 'Edit', edit_item_path(@item) %>
 <%= link_to 'Delete', @item, :method => :delete, :data => { :confirm => 'Are you sure?' } %>

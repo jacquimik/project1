@@ -2,14 +2,17 @@
   Editing
   <%= @user.name %>
 </h2>
+
+<div class="col-xs-6">
+  
 <%= form_for @user do |f| %>
   <div>
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
   <div>
     <%= f.label :email %>
-    <%= f.email_field :email %>
+    <%= f.email_field :email, class: "form-control" %>
   </div>
-  <%= f.submit %>
+  <%= f.submit class: "btn btn-default" %>
 <% end %>

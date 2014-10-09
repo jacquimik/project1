@@ -38,6 +38,8 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -121,6 +123,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
+    sass (3.4.5)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -157,6 +160,7 @@ DEPENDENCIES
   bcrypt
   better_errors
   binding_of_caller
+  bootstrap-sass
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails

@@ -27,6 +27,9 @@ gem 'spring',        group: :development
 
 gem 'bcrypt'
 
+gem 'bootstrap-sass'
+
+
 group :production, :staging do
   gem 'rails_12factor'
 end

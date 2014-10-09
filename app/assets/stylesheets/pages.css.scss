@@ -1,0 +1,75 @@
+body {
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-top: 60px;
+}
+
+.mainlinks {
+  margin-left: 50%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.mainheader img {
+  /*webkit-filter: blur(100px);*/
+  width:1200px;
+  height: 700px;
+  text-align: center;
+}
+
+nav {
+  background-color: purple;
+  color: white;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  color: white;
+}
+
+li {
+ color: yellow;
+
+}
+
+nav a {
+  color: white;
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+div.clothes-index img{
+  height: 270px;
+  width: 270px;
+  display: inline;
+  text-align: center;
+}
+
+.clothes-index {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.link {
+  margin: 0 0 0 120px;
+  position: relative;
+}
+
+.showimage img {
+  height: 400px;
+  width: auto;
+  text-align: center;
+}
+
+
+
