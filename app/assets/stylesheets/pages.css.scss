@@ -5,7 +5,8 @@ body {
 }
 
 .mainlinks {
-  margin-left: 50%;
+  text-align: center;
+  font-size: 30px;
 }
 
 h2 {
@@ -15,7 +16,7 @@ h2 {
 .mainheader img {
   /*webkit-filter: blur(100px);*/
   width:1200px;
-  height: 700px;
+  height: 500px;
   text-align: center;
 }
 
@@ -71,5 +72,7 @@ div.clothes-index img{
   text-align: center;
 }
 
-
+.row {
+  display: inline-block;
+}
 

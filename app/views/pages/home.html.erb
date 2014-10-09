@@ -1,27 +1,39 @@
-<h2>Restyle Me</h2>
+<br><br>
 
 
 
 <div class="mainheader">
-  <img src="http://i.imgur.com/ki1OXTw.jpg" class="img-responsive" alt="Responsive image"/></a>
+  <img src=//i.imgur.com/iHPkvU4.jpg" class="img-responsive" alt="Responsive image"/></a>
 </div>
-
+<br>
 
 <div class="mainlinks">
-<% if @current_user.present? %>
-	<a href="/searches/new">Search</a>
-	<a href="/items/new">Create new</a>
+<% if @current_user.present? %> 
+    <i class="glyphicon glyphicon-search">  <lb>    
+    <i class="glyphicon glyphicon-plus"></i><br>
+	<a href="/searches/new">Search</a> || 
+	<a href="/items/new">Add</a>
 <% end %>
 </div>
 
+<br>
 
+<div class="row"> 
+  <div class="col-sm-4">
+  	<h1>Sign up <i class="glyphicon glyphicon-user"></h1>
+  	<p>To get started, all you have to do is create an account and sign in. It really is that simple! Once you have created an account, you can start uploading and sharing your second hand clothes. </p>
+  </div>
 
-<div class="row">
-  <div class="col-sm-4">Suspendisse dapibus ex egestas, dapibus ex nec, tempus dui. Nulla iaculis pulvinar orci eu porta. Proin ullamcorper congue lorem ac pellentesque. Proin at turpis non nisi ultrices efficitur vitae vel metus. Nunc sagittis, est nec interdum aliquet, magna justo tristique quam, posuere hendrerit orci arcu eu ligula. Donec ante libero, venenatis eget semper ut, vehicula nec lorem. Nam vel quam velit. Aenean commodo, ex quis imperdiet gravida, turpis est volutpat elit, at rhoncus magna sapien ut sem. Sed porttitor ligula sit amet nunc congue tristique. Maecenas suscipit elit sit amet semper finibus. Praesent ipsum enim, efficitur ac rhoncus eu, ultrices at ligula. Quisque consectetur, neque ut viverra euismod, dui augue dapibus sapien, ac vestibulum justo dolor sed turpis.</div>
+  <div class="col-sm-4">
+		<h1>Upload <i class="glyphicon glyphicon-upload"></h1>
+		<p>When uploading, enter the name, price, size and short description of your item, as well as your preffered contact information. Not only will this help buyers find your item, but will allow others to make an informed decision to ensure that your clothing goes to that perfect person!</p>
 
-  <div class="col-sm-4">Suspendisse dapibus ex egestas, dapibus ex nec, tempus dui. Nulla iaculis pulvinar orci eu porta. Proin ullamcorper congue lorem ac pellentesque. Proin at turpis non nisi ultrices efficitur vitae vel metus. Nunc sagittis, est nec interdum aliquet, magna justo tristique quam, posuere hendrerit orci arcu eu ligula. Donec ante libero, venenatis eget semper ut, vehicula nec lorem. Nam vel quam velit. Aenean commodo, ex quis imperdiet gravida, turpis est volutpat elit, at rhoncus magna sapien ut sem. Sed porttitor ligula sit amet nunc congue tristique. Maecenas suscipit elit sit amet semper finibus. Praesent ipsum enim, efficitur ac rhoncus eu, ultrices at ligula. Quisque consectetur, neque ut viverra euismod, dui augue dapibus sapien, ac vestibulum justo dolor sed turpis.</div>
+  </div>
 
 <div class="clearfix visible-xs-block"></div>
 
-  <div class="col-sm-4">Suspendisse dapibus ex egestas, dapibus ex nec, tempus dui. Nulla iaculis pulvinar orci eu porta. Proin ullamcorper congue lorem ac pellentesque. Proin at turpis non nisi ultrices efficitur vitae vel metus. Nunc sagittis, est nec interdum aliquet, magna justo tristique quam, posuere hendrerit orci arcu eu ligula. Donec ante libero, venenatis eget semper ut, vehicula nec lorem. Nam vel quam velit. Aenean commodo, ex quis imperdiet gravida, turpis est volutpat elit, at rhoncus magna sapien ut sem. Sed porttitor ligula sit amet nunc congue tristique. Maecenas suscipit elit sit amet semper finibus. Praesent ipsum enim, efficitur ac rhoncus eu, ultrices at ligula. Quisque consectetur, neque ut viverra euismod, dui augue dapibus sapien, ac vestibulum justo dolor sed turpis.</div>
+  <div class="col-sm-4">
+	<h1>Search<i class="glyphicon glyphicon-search"></h1>
+	<p>Once you've uploaded your item, you can search for clothes through categories that are specific to your interest and need. The process of connecting buyers and sellers of second-hand clothing now becomes a stess free situation! </p>
+  </div>
 </div> 
