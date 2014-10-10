@@ -1,31 +1,32 @@
 <div class="col-xs-6">
-
-<%= form_for @item do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name, class: "form-control" %>
-  </p>
-
-  <p>
-    <%= f.label :image_url %>
-    <%= f.text_field :image_url, class: "form-control" %>
-  </p>
+  <%= form_for @item do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </p>
 
     <p>
-    <%= f.label "Description & Contact Information" %>
-    <%= f.text_field :description, class: "form-control" %>
-  </p>
-<h3> Please choose the categories that apply to your item</h3>
-<div class="checkbox">
-  <% Category.all.each do |category| %>
-    <%= check_box_tag "item[category_ids][]", category.id, @item.category_ids.include?(category.id), id: dom_id(category) %>
-    <%= label_tag dom_id(category), category.name %><br>
-  <% end %>
+      <%= f.label :image_url %>
+      <%= f.text_field :image_url, class: "form-control" %>
+    </p>
+
+    <p>
+      <%= f.label "Description & Contact Information" %>
+      <%= f.text_area :description, :cols => "80", :rows => "5", :class => 'form-control' %>
+    </p>
+
 
 </div>
 
+<div class="checkbox">
+    <h3>Categories</h3>
+    <ul>
+  <% Category.all.each do |category| %>
+    <li class="item"><%= check_box_tag "item[category_ids][]", category.id, @item.category_ids.include?(category.id), id: dom_id(category) %><%= label_tag dom_id(category), category.name %></li>
+  <% end %>
+  </ul>
+</div>
+<br>
 
-
-<%= f.submit class: "btn btn-default" %>
-
+  <%= f.submit class: "btn btn-default" %>
 <% end %>

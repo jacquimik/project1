@@ -1,7 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
 body {
   margin-left: 8%;
   margin-right: 8%;
   padding-top: 60px;
+}
+
+h1 {
+  font-family: Shadows into light;
+}
+
+.welcome p {
+  color: white;
+  font-family: Poiret One;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.welcome h1 {
+  color: white;
+  font-family: Shadows into light;
+  text-align: center;
+}
+
+.welcome {
+  display: inline-block;
+  max-width: 300px;
+  margin-left: 30px;
 }
 
 .mainlinks {
@@ -13,36 +39,30 @@ h2 {
   text-align: center;
 }
 
-.mainheader img {
-  /*webkit-filter: blur(100px);*/
-  width:1200px;
-  height: 500px;
-  text-align: center;
-}
-
-nav {
-  background-color: purple;
+.navbar-inverse {
+  opacity: 0.8;
   color: white;
-  padding: 1em 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  color: white;
-}
-
-li {
- color: yellow;
+  font-weight: bold;
 
 }
 
-nav a {
-  color: white;
+.background img {
+  position: fixed; 
+  top: 0%; 
+  left: 0%; 
+  width: 100%; 
+  height: 150%;
+}
+
+.background img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
 }
 
 .field_with_errors {
@@ -51,14 +71,16 @@ nav a {
 
 div.clothes-index img{
   height: 270px;
-  width: 270px;
+  width: auto;
   display: inline;
   text-align: center;
 }
 
 .clothes-index {
-  font-size: 16px;
+  font-size: 24px;
   display: inline-block;
+  font-family: Shadows into light;
+
 }
 
 .link {
@@ -70,9 +92,65 @@ div.clothes-index img{
   height: 400px;
   width: auto;
   text-align: center;
+  z-index: -1;
+  position: fixed;
 }
 
 .row {
   display: inline-block;
+  margin-bottom: 50px;
+  margin-right: -15px;
+
 }
 
+.checkbox {
+  margin-top: 600px;
+  width: 520px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.checkbox li {
+  display: inline-block;
+  min-width: 105px;
+  margin: 20px;
+  color: black;
+}
+
+.checkbox item {
+  margin: 0 0 0 -120px;
+}
+
+.glyphicon {
+  margin-left: 40px;
+}
+
+.writing {
+  color: white;
+  font-size: 50px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin-top: 160px;
+  margin-right: 100px;
+  font-family: Shadows into light;
+}
+
+.showclothes {
+  text-align: center;
+  border: 2px solid;
+  font-family: Shadows into light;
+}
+
+.about {
+  width: 700px;
+  text-align: center;
+  font-size: 30px;
+  font-family: shadows into light;
+  margin-left: 230px;
+
+}
+
+.about h1 {
+  font-size: 60px;
+}

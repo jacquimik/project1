@@ -1,10 +1,11 @@
 <div class="clothes-index">
 	<h2>All clothes</h2>
-	<% @items.each do |item| %>
-	<div class="clothes-index">	
-	 <div class="clothes-index"><img src="<%= item.image_url%>">
-	 	<div class="link"><%= link_to item.name, item %></div>
-	 </div>
-	</div>
+		<% @items.each do |item| %>
+			<div class="clothes-index">	
+	 			<div class="clothes-index"><img src="<%= item.image_url%>">
+	 				<div class="link"><%= link_to item.name, item %>
+	 				</div>
+	 			</div>
+		</div>
 	<% end %>
 </div>
