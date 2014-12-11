@@ -8,25 +8,27 @@
   </ol>
 <% end %>
 
-
-<div class="col-xs-6">
-  <%= form_for @user do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name, :autofocus => true, class: "form-control" %>
-   
-    <%= f.label :email %>
-    <%= f.email_field :email, class: "form-control" %>
-  
-    <%= f.label :password %>
-    <%= f.password_field :password, class: "form-control" %>
-   
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, class: "form-control" %><br>
+<div class="newuser">
+  <h1 class="new">Sign Up!</h1>
+  <div class="col-xs-6">
+    <%= form_for @user do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name, :autofocus => true, class: "form-control" %>
+     
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
     
-  <label>
-    <%= f.submit class: "btn btn-default" %>
-  </label>
-  <% end %>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+     
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: "form-control" %><br>
+      
+    <label>
+      <%= f.submit class: "btn btn-default" %>
+    </label>
+    <% end %>
+  </div>
 </div>
 
 

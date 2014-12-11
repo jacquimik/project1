@@ -13,14 +13,14 @@ h1 {
 
 .welcome p {
   color: white;
-  font-family: Poiret One;
-  font-weight: bold;
-  font-size: 16px;
+  font-family: Lato;
+  font-weight: lighter;
+  font-size: 22px;
 }
 
 .welcome h1 {
   color: white;
-  font-family: Shadows into light;
+  font-family: Lato;
   text-align: center;
 }
 
@@ -131,8 +131,6 @@ div.clothes-index img{
   z-index: 1;
   position: relative;
   text-align: center;
-  margin-top: 160px;
-  margin-right: 100px;
   font-family: Shadows into light;
 }
 
@@ -152,16 +150,62 @@ div.clothes-index img{
   text-align: center;
 }
 
+.heading {
+  font-size: 140px;
+  font-family: Lato;
+}
+
 
 .about {
   width: 700px;
   text-align: center;
   font-size: 30px;
-  font-family: shadows into light;
+  font-family: Lato;
   margin-left: 230px;
+  padding-top: 30px;
 
 }
 
 .about h1 {
   font-size: 60px;
+}
+
+h1 a :hover {
+  font-color: white;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+.para {
+  font-family: Lato;
+}
+
+.login {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.loginheading {
+  text-align: center;
+}
+
+.newuser {
+  text-align: center;
+  margin-left: 35%;
+  padding-top: 10px;
+}
+
+.new {
+  font-size: 36px;
+  text-align: center;
+  margin-left: -48%;
+  padding-bottom: 20px;
+}
+
+.items {
+  padding-left: 64%;
+  width: 147%;
 }
