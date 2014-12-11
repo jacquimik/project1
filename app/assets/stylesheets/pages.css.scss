@@ -16,6 +16,7 @@ h1 {
   font-family: Lato;
   font-weight: lighter;
   font-size: 22px;
+  text-align: center;
 }
 
 .welcome h1 {
@@ -71,9 +72,10 @@ h2 {
 
 div.clothes-index img{
   height: 270px;
-  width: auto;
+  width: 250px;
   display: inline;
   text-align: center;
+
 }
 
 .clothes-index {
@@ -135,13 +137,8 @@ div.clothes-index img{
 }
 
 .showclothes {
-  text-align: center;
-  border: 2px solid;
-  font-family: Shadows into light;
-  width: 400px;
   height: auto;
   text-align: center;
-  margin-left: 350px ;
 }
 
 .showclothes img {
@@ -208,4 +205,43 @@ text-decoration: none;
 .items {
   padding-left: 64%;
   width: 147%;
+  margin-left: 25%;
+}
+
+.newitem {
+  text-align: center;
+}
+
+.submit {
+  text-align: center;
+}
+
+.checkbox h3 {
+  text-align: center;
+}
+
+.item-desc {
+  padding-top: 90px;
+}
+
+.item-name {
+  font-size: 40px;
+}
+
+.all-clothes {
+  font-size: 40px;
+  font-family: Lato;
+}
+
+.clothes-index a {
+  font-family: Lato;
+}
+
+.edit-user {
+  width: 500px;
+  margin-left: 27%;
+}
+
+.button-edit {
+  text-align: center;
 }

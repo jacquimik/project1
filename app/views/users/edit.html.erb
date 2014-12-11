@@ -3,8 +3,7 @@
   <%= @user.name %>
 </h2>
 
-<div class="col-xs-6">
-
+<div class="edit-user ol-xs-6">
   <%= form_for @user do |f| %>
     <div>
       <%= f.label :name %>
@@ -16,6 +15,8 @@
       <%= f.email_field :email, class: "form-control" %>
     </div>
     <br>
-  <%= f.submit class: "btn btn-default" %>
-<% end %>
+    <div class="button-edit">
+      <%= f.submit class: "btn btn-default" %>
+    <% end %>
+  </div>
 </div>
